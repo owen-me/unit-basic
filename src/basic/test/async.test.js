@@ -1,7 +1,7 @@
 const fetchProduct = require('../async.js');
 
 describe('Async', () => {
-  it('async-done', (done) => {
+  it('async - done', (done) => {
     fetchProduct().then((item) => {
       expect(item).toEqual({ item: 'Milk', price: 200 });
       done();
@@ -26,7 +26,7 @@ describe('Async', () => {
     });
   });
 
-  it('async - resolves', () => {
+  it('async - reject', () => {
     return expect(fetchProduct('error')).rejects.toBe('network error');
   });
 });
