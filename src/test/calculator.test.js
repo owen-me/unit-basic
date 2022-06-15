@@ -22,5 +22,9 @@ describe('calculator test', () => {
 
     cal.divide(2);
     expect(cal.value).toBe(40);
+
+    expect(() => {
+      cal.add(101);
+    }).toThrow('Value can not be greater than 100');
   });
 });
