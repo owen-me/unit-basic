@@ -1,7 +1,6 @@
-import ProductClient from './product_client';
 class ProductService {
-  constructor() {
-    this.productClient = new ProductClient();
+  constructor(productService) {
+    this.productClient = productService;
   }
 
   fetchAvailableItems() {
