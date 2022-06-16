@@ -1,4 +1,4 @@
-import ProductClient from './product_client';
+const ProductClient = require('./product_client');
 class ProductService {
   constructor() {
     this.productClient = new ProductClient();

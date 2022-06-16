@@ -1,6 +1,6 @@
 class ProductService {
-  constructor(productService) {
-    this.productClient = productService;
+  constructor(productClient) {
+    this.productClient = productClient;
   }
 
   fetchAvailableItems() {
